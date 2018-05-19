@@ -12,8 +12,10 @@
     "@babel/preset-env": "7.0.0-beta.47",
     "@babel/preset-typescript": "7.0.0-beta.47",
     "@types/aws-lambda": "^8.10.4",
+    "@types/jest": "^22.2.3",
     "@types/node": "^10.1.1",
     "babel-loader": "8.0.0-beta.2",
+    "jest": "^22.4.4",
     "ts-node": "^6.0.3",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3",
@@ -27,8 +29,12 @@
     "aws-sdk": "^2.243.1"
   },
   "scripts": {
+    "test": "jest",
     "lint": "tslint --project .",
     "build-dev": "tsc --emitDeclarationOnly && webpack --config webpack.dev.js",
     "build-prod": "tsc --emitDeclarationOnly && webpack --config webpack.prod.js"
+  },
+  "jest": {
+    "transform": {}
   }
 }
