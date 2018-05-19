@@ -33,8 +33,8 @@
     "test": "webpack --config webpack.dev.js && jest",
     "lint": "tslint --project .",
     "typecheck": "tsc --noEmit",
-    "build-dev": "tsc --emitDeclarationOnly && webpack --config webpack.dev.js",
-    "build-prod": "tsc --emitDeclarationOnly && webpack --config webpack.prod.js"
+    "build-dev": "tsc --noEmit && webpack --config webpack.dev.js",
+    "build-prod": "tsc --noEmit && webpack --config webpack.prod.js"
   },
   "jest": {
     "transform": {}

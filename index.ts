@@ -7,9 +7,11 @@ import {
   Callback, Context,
   Handler,
 } from "aws-lambda";
-import * as DynamoDB from "aws-sdk/clients/dynamodb";
+import {
+  DocumentClient,
+} from "aws-sdk/clients/dynamodb";
 
-const dynamo = new DynamoDB.DocumentClient();
+const dynamo = new DocumentClient();
 
 export const handler: APIGatewayProxyHandler = (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   const result: APIGatewayProxyResult = {
