@@ -29,7 +29,7 @@
     "aws-sdk": "^2.243.1"
   },
   "scripts": {
-    "test": "jest",
+    "test": "webpack --config webpack.dev.js && jest",
     "lint": "tslint --project .",
     "build-dev": "tsc --emitDeclarationOnly && webpack --config webpack.dev.js",
     "build-prod": "tsc --emitDeclarationOnly && webpack --config webpack.prod.js"
