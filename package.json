@@ -1,9 +1,9 @@
 {
-  "name": "node-playground",
-  "version": "0.1.0",
-  "description": "Scripts and dependencies for playing with Node.js",
+  "name": "aws-serverless-playground",
+  "version": "0.0.1",
+  "description": "Scripts and dependencies for playing with AWS Serverless components",
   "main": "index.ts",
-  "repository": "https://github.com/mlurie/node-playground",
+  "repository": "https://github.com/mlurie/aws-serverless-playground",
   "author": "mlurie <melurie03@gmail.com>",
   "license": "MIT",
   "devDependencies": {
