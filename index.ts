@@ -14,7 +14,11 @@ const dynamo = new DynamoDB.DocumentClient();
 export const handler: APIGatewayProxyHandler = (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   const result: APIGatewayProxyResult = {
     statusCode: 200,
-    body: "hello world",
+    headers: {
+      "Access-Control-Allow-Origin" : "*",
+      "Access-Control-Allow-Credentials" : true,
+    },
+    body: JSON.stringify({ message: "Hello World!" }),
   };
   return Promise.resolve(result);
 };
