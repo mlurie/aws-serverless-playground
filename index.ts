@@ -1,16 +1,20 @@
 /* tslint:disable no-console */
 
-import { Callback, Context, Handler } from "aws-lambda";
+import {
+  APIGatewayProxyEvent,
+  APIGatewayProxyHandler,
+  APIGatewayProxyResult,
+  Callback, Context,
+  Handler,
+} from "aws-lambda";
 import * as DynamoDB from "aws-sdk/clients/dynamodb";
 
 const dynamo = new DynamoDB.DocumentClient();
 
-const handler: Handler = (event: any): Promise<string[]> => {
-  const a: string[] = [
-    "hello",
-    "world",
-  ];
-  return Promise.resolve(a);
+export const handler: APIGatewayProxyHandler = (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
+  const result: APIGatewayProxyResult = {
+    statusCode: 200,
+    body: "hello world",
+  };
+  return Promise.resolve(result);
 };
-
-export { handler };
