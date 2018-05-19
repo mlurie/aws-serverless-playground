@@ -31,6 +31,7 @@
   "scripts": {
     "test": "webpack --config webpack.dev.js && jest",
     "lint": "tslint --project .",
+    "typecheck": "tsc --noEmit",
     "build-dev": "tsc --emitDeclarationOnly && webpack --config webpack.dev.js",
     "build-prod": "tsc --emitDeclarationOnly && webpack --config webpack.prod.js"
   },

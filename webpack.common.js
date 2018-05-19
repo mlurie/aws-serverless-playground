@@ -5,7 +5,9 @@ module.exports = {
   entry: './index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'handler.js',
+    filename: 'lambda.js',
+    library: 'lambda',
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
