@@ -31,5 +31,5 @@ export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEven
     },
     body: JSON.stringify(data.Item),
   };
-  return await result;
+  return result;
 };
