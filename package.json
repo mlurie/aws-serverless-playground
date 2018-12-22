@@ -7,9 +7,11 @@
   "author": "mlurie <melurie03@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@aws-cdk/cdk": "^0.21.0",
     "@types/aws-lambda": "^8.10.4",
     "@types/jest": "^23.0.0",
     "@types/node": "^8.10.0",
+    "aws-cdk": "^0.21.0",
     "aws-sdk-mock": "^4.1.0",
     "jest": "^23.1.0",
     "ts-loader": "^5.1.1",
