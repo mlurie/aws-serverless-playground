@@ -9,7 +9,7 @@
   "devDependencies": {
     "@types/aws-lambda": "^8.10.4",
     "@types/jest": "^23.0.0",
-    "@types/node": "^10.1.1",
+    "@types/node": "^8.10.0",
     "aws-sdk-mock": "^4.1.0",
     "jest": "^23.1.0",
     "ts-loader": "^5.1.1",
