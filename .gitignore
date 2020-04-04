@@ -63,3 +63,5 @@ typings/
 # Webpack output
 dist/
 lib/
+
+.metals
