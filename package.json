@@ -25,7 +25,7 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "aws-sdk": "^2.243.1"
+    "aws-sdk": "^2.814.0"
   },
   "scripts": {
     "test": "webpack --config webpack.dev.js && jest",
